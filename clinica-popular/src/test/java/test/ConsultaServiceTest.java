@@ -18,7 +18,6 @@ public class ConsultaServiceTest {
         service = new ConsultaService();
     }
 
-    // ✅ TESTES ANTIGOS MANTIDOS
     @Test
     void deveAgendarConsulta() {
         service.agendarConsulta("11111111111", "Ana", "2025-06-25T10:00");
@@ -33,7 +32,6 @@ public class ConsultaServiceTest {
         assertTrue(consultas.isEmpty());
     }
 
-    // ✅ NOVOS TESTES COM PACIENTE
     @Test
     void deveCriarPacienteComSucesso() {
         service.agendarConsulta("12345678900", "Carlos", "2025-06-30T09:00");
